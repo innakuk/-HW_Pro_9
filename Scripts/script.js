@@ -1,9 +1,9 @@
 //Задание 1
 
-//let numOrStr = prompt('input number or string');
-//console.log(numOrStr);
+/*let numOrStr = prompt('input number or string');
+console.log(numOrStr);
 
-/*if(numOrStr === null || numOrStr.trim() === '' || isNaN( +numOrStr )) {
+if(numOrStr === null || numOrStr.trim() === '' || isNaN( +numOrStr )) {
     console.log('ERROR!')
 } else {
     console.log('OK!')
@@ -15,17 +15,21 @@
 let numOrStr = prompt('input number or string');
 console.log(numOrStr);
 
-switch (numOrStr) {
-    case null:
+switch (true) {
+    case (numOrStr === null):
         console.log('вы отменили');
         break;
+    case (numOrStr.trim() === ''):
     case '':
         console.log('Empty String');
         break;
-    case isNaN( +numOrStr ):
-        console.log(' number is Ba_NaN');
+    case (isNaN( +numOrStr )):
+        console.log('number is Ba_NaN');
         break;
-    case numOrStr:
+    default:
         console.log('OK!');
-        break;
 }
+
+
+
+
